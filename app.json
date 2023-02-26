@@ -1,12 +1,15 @@
 {
   "name": "Weather API wrapper",
-  "description": "Darksky API wrapper. Required to avoid CORS error. Used in https://basicreact.com course.",
-  "repository": "https://github.com/satansdeer/weather-api",
+  "description": "Darksky API wrapper, modified by ALEEF02 for AccuWeather. Required to avoid CORS error. Used in https://basicreact.com course.",
+  "repository": "https://github.com/ALEEF02/lfweatherapi",
   "logo": "https://raw.githubusercontent.com/satansdeer/weather-api/master/darksky-icon.jpg",
   "keywords": ["node", "express", "static"],
   "env": {
-    "DARKSKY_API_KEY": {
-      "description": "Secret key to access Darksky API endpoints."
+    "ACCUWEATHER_CORE_API_KEY": {
+      "description": "Secret key to access AccuWeather Core API endpoints."
+    },
+	"ACCUWEATHER_MINUTE_API_KEY": {
+      "description": "Secret key to access AccuWeather Minute API endpoint."
     }
   }
 }
