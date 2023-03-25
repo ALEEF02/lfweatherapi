@@ -16,7 +16,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.get("/forecast/core/:geoPos, function(req, res, next) {
+app.get("/forecast/core/:geoPos", function(req, res, next) {
   axios
     .get(
       `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${req.params.geoPos}?details=true&apikey=${ACCUWEATHER_CORE_API_KEY}`
